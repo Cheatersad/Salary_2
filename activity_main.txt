@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/MainActivity_tv_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salary Calculator"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/MainActivity_et_salary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your salary"
+        android:background="@drawable/text_fill_bg"
+        android:layout_below="@+id/MainActivity_tv_heading"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/MainActivity_tv_DA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your DA"
+        android:textSize="20dp"
+        android:background="@drawable/text_fill_bg"
+        android:layout_below="@+id/MainActivity_et_salary"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/MainActivity_tv_HRA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your HRA"
+        android:textSize="20dp"
+        android:background="@drawable/text_fill_bg"
+        android:layout_below="@+id/MainActivity_tv_DA"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/MainActivity_tv_net_salary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your net salary"
+        android:textSize="20dp"
+        android:background="@drawable/text_fill_bg"
+        android:layout_below="@+id/MainActivity_tv_HRA"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/MainActivity_btn_calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textColor="#A54B2F"
+        android:background="@drawable/button_bg"
+        android:layout_below="@+id/MainActivity_tv_net_salary"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/MainActivity_btn_clc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textColor="#A54B2F"
+        android:background="@drawable/button_bg"
+        android:layout_below="@+id/MainActivity_btn_calc"
+        android:layout_margin="10dp"
+        />
+
+</RelativeLayout>
